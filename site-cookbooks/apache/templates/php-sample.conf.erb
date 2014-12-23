@@ -1,0 +1,17 @@
+NameVirtualHost *:80
+
+<VirtualHost *:80>
+
+DocumentRoot /vagrant
+
+ServerName vagrant.chef.jp
+
+ServerAlias vagrant.chef.jp
+
+<Directory "/vagrant">
+
+AllowOverride All
+
+</Directory>
+
+</VirtualHost>

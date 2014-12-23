@@ -1,3 +1,4 @@
+
 #
 # Cookbook Name:: iptables
 # Recipe:: default
@@ -8,11 +9,11 @@
 #
 
 template "iptables" do
-	path "/etc/sysconfig/iptables"
-	owner "root"
-	group "root"
-	mode 0664
-  notifies :restart, 'service[iptables]'
+    path "/etc/sysconfig/iptables"
+    owner "root"
+    group "root"
+    mode 0664
+    notifies :restart, 'service[iptables]'
 end
 
 service "iptables" do

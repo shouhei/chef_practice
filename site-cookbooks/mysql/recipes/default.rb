@@ -7,9 +7,9 @@
 # All rights reserved - Do Not Redistribute
 #
 package "mysql-server" do
-	action :install
+    action :install
 end
 
 service "mysqld" do
-	action [:enable, :start]
+    action [:enable, :start]
 end

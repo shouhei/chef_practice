@@ -199,7 +199,6 @@ LoadModule suexec_module modules/mod_suexec.so
 LoadModule disk_cache_module modules/mod_disk_cache.so
 LoadModule cgi_module modules/mod_cgi.so
 LoadModule version_module modules/mod_version.so
-
 #
 # The following modules are not loaded by default:
 #
@@ -399,7 +398,7 @@ DocumentRoot "/var/www/html"
 # negotiated documents.  The MultiViews Option can be used for the 
 # same purpose, but it is much slower.
 #
-DirectoryIndex index.html index.html.var
+DirectoryIndex index.html index.html.var index.php
 
 #
 # AccessFileName: The name of the file to look for in each directory
